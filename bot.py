@@ -23,3 +23,4 @@ def send_welcome(message):
     bot.reply_to(message, welcome_text, parse_mode="Markdown")
 
 bot.infinity_polling()
+
